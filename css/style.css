@@ -23,8 +23,9 @@ body {
 
 #twitch {
 	position: absolute;
-	left: 20%;
+	left: 26%;
 	text-align: center;
+	width: 800px;
 }
 
 #twitch img {
