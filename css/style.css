@@ -22,7 +22,6 @@ body {
 
 
 #twitch {
-	width: 60%;
 	position: absolute;
 	left: 20%;
 	text-align: center;
@@ -31,15 +30,16 @@ body {
 #twitch img {
 	border: 5px solid rgba(0,0,0,0);
     margin: 0 auto; 
-    margin-bottom: 20px;
     cursor: pointer;
 }
 
 
 #load {
-	position: fixed;
     bottom: 0;
-	margin-right: 100px;
+    position: absolute;
+    top:100%;
+    left:50%;
+    margin-left:-50px
 }
 
 .games {
