@@ -26,6 +26,9 @@ body {
 	left: 26%;
 	text-align: center;
 	width: 800px;
+		/** margin-left: auto;
+	margin-right: auto;
+	width: 800px; **/
 }
 
 #twitch img {
