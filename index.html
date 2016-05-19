@@ -6,12 +6,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Twitch Interface</title>
+  <title>Twitch</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/jPushMenu.css" />
   <link rel="stylesheet" href="css/hover.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/jPushMenu.js"></script>
+  <script>
+	jQuery(document).ready(function($) {
+		$('.toggle-menu').jPushMenu();
+	});
+  </script>
   
 </head>
 
@@ -43,6 +50,7 @@
 
 <img class="toggle-menu menu-left push-body-left hvr-pulse" src="img/left-menu.png"  style="cursor: pointer">
 
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
 	<div class="closeTrigger1">
 		<p><a href="#" class="closeTrigger1">x</a></p>
 	</div>
@@ -57,10 +65,12 @@
 				<p>language=en</p>
 		</div>
 	</div>
+</nav>
 
 <!-- Right Menu Sidebar -->
 
 <img class="toggle-menu menu-right push-body-right hvr-pulse" src="img/right-menu.png" style="cursor: pointer">
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
 	<div class="closeTrigger2">
 		<p><a href="#" class="closeTrigger2">x</a></p>
 	</div>
@@ -97,6 +107,7 @@
 
 	</div>
 
+</nav>
 
   <script src="js/game.js"></script>
   <script src="js/broadcast.js"></script>
