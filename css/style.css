@@ -1,0 +1,87 @@
+body {
+    background: url(../img/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.header {
+	width:100%;
+	text-align:center;
+	left: 50%;
+}
+
+.header img {
+	float:none;
+	margin:10px auto;
+}
+
+
+#twitch {
+	width: 60%;
+	position: absolute;
+	left: 20%;
+	text-align: center;
+}
+
+#twitch img {
+	border: 5px solid rgba(0,0,0,0);
+    margin: 0 auto; 
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+#load {
+	position: fixed;
+    bottom: 0;
+	margin-right: 100px;
+}
+
+.games {
+	margin-left: 10px;
+	margin-top: 60px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+
+.broadcast {
+	margin-top: 60px;
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.broadcast p {
+	display: none;
+}
+
+.closeTrigger1 {
+	position: absolute;
+	margin-bottom: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+	font-size: 30px;
+	display: inline-block;
+	margin-top: -30px;
+	right: 0;
+	}
+	
+.closeTrigger2 {
+	position: absolute;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+	font-size: 30px;
+	display: inline-block;
+	margin-top: -30px;
+	left: 0;
+	}

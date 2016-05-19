@@ -1,0 +1,164 @@
+@import "bourbon";
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+
+// colors
+$red: #F47564;
+$grey: #E4E0E1;
+$green: #8FD7D6;
+
+// variables
+$font: Roboto, Arial, Sans-Serif;
+
+
+main {
+  margin: 0 auto;
+  width: 300px;
+  border: 1px solid $red;
+  background: white;
+  
+  // Menu bar
+  header {
+    height: 50px;
+    background-color: $red;
+    position: relative;
+    
+    ul {
+      margin-top: 0;
+      padding-left: 0;
+    }
+    
+    li {
+      position: relative;
+      list-style-type: none;
+      display: inline-block;
+      font-family: $font;
+      color: white;
+      padding-left: 30px;
+      padding-top: 15px;
+      padding-bottom: 16px;
+      padding-right: 25px;
+      border-right: 1px solid lighten($red, 10);
+      
+      &:first-child {
+        padding-right: 35px;
+      }
+      
+      &:last-child {
+        border-right: none;
+      }
+      
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    
+    .activeMenu {
+      
+      &:after, &:before {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+      
+      &:after {
+        border-top-color: $red;
+        border-width: 10px;
+        margin-left: -10px;
+        z-index: 10;
+      }
+    }
+  }
+  
+  // Search bar
+  #searchMenu {
+    text-align: center;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $grey;
+    
+    #searchBar {
+      position: relative;
+      width: 70%;
+      text-align: left;
+      line-height: 20px;
+      border-radius: 20px;
+      border: 1px solid $grey;
+      outline: none;
+      padding-left: 40px;
+      padding-right: 20px;
+      font-size: .8em;
+      font-family: $font;
+    }
+    
+    #searchIcon {
+      position: absolute;
+      z-index: 1;
+      padding-top: 3px;
+      left: 25px;
+      color: $grey;
+    }
+  }
+  
+  #people {
+    padding-left: 0;
+    
+    a {
+      text-decoration: none;
+    }
+    
+    li {
+      list-style-type: none;
+      display: block;
+      padding-left: 20px;
+      position: relative;
+      font-family: $font;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      
+      &:nth-child(even) {
+        background-color: lighten($grey, 8);
+      }
+      
+      .pic {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+      
+      .name, .status {
+        position: absolute;
+        line-height: 50px;
+      }
+      
+      .name {
+        left: 80px;
+        color: $red;
+      }
+      
+      .status {
+        right: 20px;
+      }
+      
+      .title {
+        color: darken($grey, 20);
+        font-size: .7em;
+      }
+    }
+  }
+}
+
+// Classes to apply colors to the status
+.green {
+  color: $green;
+}
+
+.red {
+  color: $red;
+}
