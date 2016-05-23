@@ -1,4 +1,4 @@
-body {
+body sb-site {
     background: url(../img/bg.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -8,6 +8,15 @@ body {
     padding: 0;
 }
 
+.sb-site {
+    background: url(../img/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+}
 
 .header {
 	width:100%;
