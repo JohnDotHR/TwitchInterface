@@ -14,4 +14,6 @@ Load more button which loads another 9 streams from the JSON/API.
 
 Javascript coded push-menus.
 
+To do: RWD, functionable checkbox filters.
+
 ![screenshot](http://i.imgur.com/ts6cx0q.jpg)
